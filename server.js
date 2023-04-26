@@ -9,11 +9,11 @@ app.use(express.urlencoded({extended: false}))
 //routes
 
 app.get('/', (req, res) => {
-    res.send('Hello NODE API')
+    res.send('Hello')
 })
 
 app.get('/blog', (req, res) => {
-    res.send('Hello Blog, My name is Devtamin')
+    res.send('Hello Bestie, My name is Blessing')
 })
 
 app.get('/products', async(req, res) => {
@@ -81,8 +81,7 @@ app.delete('/products/:id', async(req, res) =>{
 })
 
 mongoose.set("strictQuery", false)
-mongoose.
-connect('mongodb+srv://admin:12345678Admin@devtaminapi.zpncstm.mongodb.net/Node-API?retryWrites=true&w=majority')
+mongoose.connect('mongodb+srv://blessingnwakwuo:12345678ba@restfulapi.fswxhhl.mongodb.net/Node-Api?retryWrites=true&w=majority')
 .then(() => {
     console.log('connected to MongoDB')
     app.listen(3000, ()=> {
